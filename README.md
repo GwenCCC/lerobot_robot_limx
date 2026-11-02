@@ -97,6 +97,20 @@ lerobot-record --robot.type=limx_tron2 --robot.robot_ip=10.192.1.2 --robot.port=
 
 This is how the drivers were exercised against the real SDK without hardware.
 
+### Robot models
+
+URDF, MJCF and USD files live in their own repositories rather than in this package: the meshes
+alone are far larger than the driver, and simulators load them from disk.
+
+| Robot | Models |
+|---|---|
+| Oli | [humanoid-description](https://github.com/limxdynamics/humanoid-description) |
+| Luna | [luna-description](https://github.com/limxdynamics/luna-description) |
+| TRON1 | [tron1-robot-description](https://github.com/limxdynamics/tron1-robot-description) |
+| TRON2 | [tron2-robot-description](https://github.com/limxdynamics/tron2-robot-description) |
+
+This package ships the drivers only. Nothing in it needs those files to talk to a robot.
+
 ## Known limitations
 
 - **No cameras.** These drivers expose joint positions only, so a recorded dataset is
