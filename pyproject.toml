@@ -32,8 +32,8 @@ dependencies = [
 dev = ["pytest>=8.1.0", "pytest-timeout>=2.4.0", "ruff==0.14.1"]
 
 [project.urls]
-Homepage = "https://github.com/limxdynamics/lerobot_robot_limx"
-Issues = "https://github.com/limxdynamics/lerobot_robot_limx/issues"
+Homepage = "https://github.com/GwenCCC/lerobot_robot_limx"
+Issues = "https://github.com/GwenCCC/lerobot_robot_limx/issues"
 
 [tool.setuptools.packages.find]
 where = ["src"]
